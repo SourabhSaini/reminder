@@ -14,7 +14,7 @@ def Main():
 					notify2.init('Reminder')
 					n = notify2.Notification(title, note)
 					n.show()
-					os.system('aplay /home/minion/Desktop/Python/Reminder/beep.wav')
+					os.system('aplay [path_of_file]/beep.wav')
 					with open("tempFile","w") as tempFile: 
 						for w_line in remFile:
 							if w_line!=line:
